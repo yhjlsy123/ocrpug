@@ -1,11 +1,8 @@
 package com.xy.testocr;
 
-import android.Manifest;
 import android.content.Intent;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.v4.app.ActivityCompat;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
@@ -13,8 +10,6 @@ import android.widget.TextView;
 
 import com.xy.ocr.at.CaptureActivity;
 import com.xy.ocr.at.OcrActivity;
-import com.xy.ocr.sign.SignUtil;
-import com.xy.ocr.sign.SignatureChecker;
 
 import exocr.exocrengine.EXOCRDict;
 import exocr.exocrengine.EXOCRModel;
@@ -54,8 +49,6 @@ public class OcrContentActivity extends OcrActivity {
                 startActivityForResult(scanIntent, CaptureActivity.class.getDeclaredFields().length);
             }
         });
-        String ttt = SignUtil.sHA1(OcrContentActivity.this);
-        Log.d(SignatureChecker.class.getSimpleName() + "key", ttt);
 
 
     }
