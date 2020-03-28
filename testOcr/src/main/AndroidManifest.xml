@@ -24,21 +24,21 @@
             android:name="ocr_card"
             android:value="BF:5A:78:78:A4:88:BB:C9:BA:FB:52:D9:6E:2A:93:DB" />
 
-        <activity
-            android:name=".MainActivity"
-            android:configChanges="orientation"
-            android:screenOrientation="portrait">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
         <activity android:name=".FragentContainerActivity" />
         <activity
             android:name=".OcrContentActivity"
             android:configChanges="orientation"
             android:screenOrientation="portrait">
+
+        </activity>
         <activity
             android:name="com.xy.ocr.at.IdcardActivity"
             android:configChanges="orientation"
